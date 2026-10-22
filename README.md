@@ -1,135 +1,136 @@
+<div align="center">
+
 # Enterprise CRM & ERP Platform
 
-An integrated CRM and ERP platform designed to centralize customer operations, internal workflows, reporting and core business processes in a single management environment.
+### One system for customer operations, internal workflows and business visibility
 
-## Overview
+<a href="https://github.com/tahakubilay/enterprise-crm-erp">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=900&center=true&vCenter=true&width=780&lines=CRM+%2B+ERP+in+one+operational+model;Customers+%E2%86%94+Workflows+%E2%86%94+Reporting;Enterprise+software+beyond+basic+CRUD" alt="Animated project overview" />
+</a>
 
-This project was developed as a full business management system rather than a collection of disconnected administrative screens.
+<br/>
 
-The goal is to bring customer-facing operations and internal business workflows together so that information can move consistently across the organization.
+[![Portfolio](https://img.shields.io/badge/Portfolio-Taha%20Kubilay-181717?style=for-the-badge&logo=github)](https://github.com/tahakubilay)
+[![Repository](https://img.shields.io/badge/Repository-CRM%20%2F%20ERP-0A66C2?style=for-the-badge&logo=github)](https://github.com/tahakubilay/enterprise-crm-erp)
+[![Status](https://img.shields.io/badge/Status-Portfolio%20Build-7C3AED?style=for-the-badge)](#-project-status)
+[![Demo](https://img.shields.io/badge/Live%20Demo-Coming%20Soon-F59E0B?style=for-the-badge&logo=vercel)](#-live-demo)
 
-The platform is designed around the idea that CRM and ERP functions should share a common operational model instead of existing as isolated tools.
+<br/>
 
-## Problem
+![Last Commit](https://img.shields.io/github/last-commit/tahakubilay/enterprise-crm-erp?style=flat-square)
+![Repo Size](https://img.shields.io/github/repo-size/tahakubilay/enterprise-crm-erp?style=flat-square)
 
-Organizations often manage customer records, internal workflows, reporting and operational data across multiple disconnected systems.
-
-This creates problems such as:
-
-- Duplicate or inconsistent records
-- Fragmented workflows
-- Limited visibility across departments
-- Manual transfer of information between systems
-- Difficult reporting and tracking
-- Higher operational complexity
-
-## Solution
-
-The platform provides a centralized environment for managing business data and workflows while keeping related processes connected.
-
-Its architecture is intended to support both customer relationship management and broader enterprise operations from a shared system.
-
-## Core Capabilities
-
-- Customer and account management
-- Centralized business data
-- Operational workflow management
-- Administrative processes
-- Reporting and management views
-- Business process tracking
-- Cross-module data consistency
-- Role-oriented management workflows
-
-## CRM Scope
-
-The CRM side of the platform focuses on organizing customer-related information and operational interactions within a structured workflow.
-
-Key concerns include:
-
-- Customer records
-- Relationship tracking
-- Operational history
-- Workflow visibility
-- Centralized access to customer-related information
-
-## ERP Scope
-
-The ERP side extends the platform beyond customer management and into internal operational processes.
-
-The system is designed to support:
-
-- Business workflows
-- Operational records
-- Internal management processes
-- Reporting
-- Centralized administrative control
-
-## Engineering Focus
-
-The main challenge in a combined CRM/ERP system is maintaining consistency as different business domains interact.
-
-Important engineering concerns include:
-
-- Domain separation
-- Shared data models
-- Business-rule implementation
-- Authorization boundaries
-- Workflow orchestration
-- Data integrity
-- Reporting architecture
-- Maintainable module boundaries
-
-## Architecture
-
-The public portfolio version will document the technical architecture of the system, including:
-
-- Application layers
-- Module boundaries
-- Database structure
-- API organization
-- Authentication and authorization
-- Data flow between CRM and ERP domains
-- Deployment architecture
-
-## Screenshots
-
-Product screenshots and representative workflows will be added as the portfolio version is prepared.
-
-## Demo
-
-A public demo environment is planned using synthetic business data.
-
-The portfolio version will not expose:
-
-- Production credentials
-- Customer information
-- Private business records
-- API secrets
-- Internal company configuration
-
-## Project Status
-
-**Portfolio preparation in progress.**
-
-The original application is being prepared for public presentation with sensitive data and environment-specific configuration separated from the portfolio version.
-
-## Why This Project Matters
-
-This project demonstrates experience building software beyond isolated CRUD applications.
-
-It involves thinking about how multiple business domains share data, how workflows remain consistent across modules and how an enterprise application can remain maintainable as functionality grows.
-
-It reflects work across:
-
-- Full-stack development
-- Enterprise application architecture
-- CRM systems
-- ERP systems
-- Business process modelling
-- Workflow design
-- Data modelling
-- Reporting and operational visibility
+</div>
 
 ---
 
-Built by **Taha Kubilay**
+## ✨ At a Glance
+
+| | |
+|---|---|
+| 🎯 **Goal** | Connect customer-facing operations with internal business processes |
+| 🤝 **CRM** | Customer records, relationship context and operational history |
+| 🏢 **ERP** | Internal workflows, operational records and management processes |
+| 📊 **Visibility** | Centralized reporting and cross-domain operational context |
+| 🧠 **Engineering** | Domain separation, shared data, authorization and workflow consistency |
+| 🚀 **Demo** | Synthetic-data environment planned |
+
+## 🔎 Overview
+
+This project was designed as a **combined business platform**, not a set of disconnected admin pages.
+
+The core architectural challenge is making CRM and ERP domains share information without turning the application into tightly coupled, unmaintainable code.
+
+## 🧩 The Problem
+
+Disconnected systems create:
+
+- Duplicate and inconsistent records
+- Fragmented workflows
+- Manual data transfer
+- Weak cross-department visibility
+- Hard-to-maintain reporting
+- Increasing operational complexity
+
+## 💡 The Approach
+
+```mermaid
+flowchart LR
+    CUSTOMER[Customer Domain] --> CORE[Shared Business Core]
+    OPERATIONS[ERP / Operations] --> CORE
+    CORE --> WORKFLOW[Workflow Engine / Business Rules]
+    CORE --> REPORTS[Reporting & Management Views]
+    WORKFLOW --> DATA[(Business Data)]
+    REPORTS --> DATA
+```
+
+The platform is structured around a shared operational model so related information can move consistently between customer and internal business workflows.
+
+## ⚡ Capability Map
+
+| CRM Side | Shared Platform | ERP Side |
+|---|---|---|
+| 👤 Customer records | 🔐 Authorization boundaries | 🏢 Internal operations |
+| 🧭 Relationship context | 🧱 Shared data models | 🔄 Business workflows |
+| 🕘 Operational history | 🧠 Business rules | 📋 Administrative processes |
+| 🔎 Customer visibility | 📊 Reporting | 📈 Operational visibility |
+
+## 🧠 Engineering Focus
+
+This project demonstrates work around:
+
+- Enterprise application architecture
+- Domain separation
+- Shared data modelling
+- Cross-module consistency
+- Business-rule implementation
+- Workflow orchestration
+- Authorization boundaries
+- Reporting architecture
+- Long-term maintainability
+
+> [!IMPORTANT]
+> The public repository is a **portfolio-safe representation**. Production credentials, customer records, private company data and internal secrets will not be exposed.
+
+## 🎬 Live Demo
+
+**Coming soon.**
+
+The demo will use synthetic business records and representative workflows so the system can be explored safely.
+
+## 🖼️ Product Showcase
+
+| CRM Workspace | Operations | Reporting |
+|---|---|---|
+| 👥 Coming soon | 🏢 Coming soon | 📊 Coming soon |
+
+A short animated walkthrough will be added after the public-safe build is prepared.
+
+## 🛣️ Project Status
+
+- [x] Portfolio repository
+- [x] Case-study presentation
+- [x] High-level architecture
+- [ ] Source-code sanitization
+- [ ] Real tech stack documentation
+- [ ] Screenshots & walkthrough GIF
+- [ ] Domain / database diagram
+- [ ] Public demo deployment
+
+## 💡 Why This Project Matters
+
+A CRM/ERP system becomes difficult when multiple domains must behave like one product.
+
+The engineering value here is not simply CRUD functionality; it is designing **clear boundaries, consistent workflows and reliable shared data** across an enterprise system.
+
+---
+
+<div align="center">
+
+### Built by [Taha Kubilay](https://github.com/tahakubilay)
+
+`Enterprise Software` · `Full-Stack Engineering` · `CRM` · `ERP` · `Workflow Design`
+
+[⬆ Back to top](#enterprise-crm--erp-platform)
+
+</div>
