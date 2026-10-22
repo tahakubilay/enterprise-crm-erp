@@ -4,16 +4,14 @@
 
 ### One system for customer operations, internal workflows and business visibility
 
-<a href="https://github.com/tahakubilay/enterprise-crm-erp">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=900&center=true&vCenter=true&width=780&lines=CRM+%2B+ERP+in+one+operational+model;Customers+%E2%86%94+Workflows+%E2%86%94+Reporting;Enterprise+software+beyond+basic+CRUD" alt="Animated project overview" />
-</a>
+<img src="./assets/hero.svg" alt="Animated project header" />
 
 <br/>
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-Taha%20Kubilay-181717?style=for-the-badge&logo=github)](https://github.com/tahakubilay)
 [![Repository](https://img.shields.io/badge/Repository-CRM%20%2F%20ERP-0A66C2?style=for-the-badge&logo=github)](https://github.com/tahakubilay/enterprise-crm-erp)
-[![Status](https://img.shields.io/badge/Status-Portfolio%20Build-7C3AED?style=for-the-badge)](#-project-status)
-[![Demo](https://img.shields.io/badge/Live%20Demo-Coming%20Soon-F59E0B?style=for-the-badge&logo=vercel)](#-live-demo)
+![Status](https://img.shields.io/badge/Status-Portfolio%20Build-7C3AED?style=for-the-badge)
+![Demo](https://img.shields.io/badge/Live%20Demo-Coming%20Soon-F59E0B?style=for-the-badge&logo=vercel)
 
 <br/>
 
