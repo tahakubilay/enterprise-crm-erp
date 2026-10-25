@@ -6,12 +6,16 @@
 
 <img src="./assets/hero.svg" alt="Animated project header" />
 
+<p><a href="./README.md"><strong>English</strong></a> · <a href="./README.de.md">Deutsch</a> · <a href="./README.tr.md">Türkçe</a></p>
+
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Taha%20Kubilay-181717?style=for-the-badge&logo=github)](https://github.com/tahakubilay)
-[![Repository](https://img.shields.io/badge/Repository-CRM%20%2F%20ERP-0A66C2?style=for-the-badge&logo=github)](https://github.com/tahakubilay/enterprise-crm-erp)
-![Status](https://img.shields.io/badge/Status-Portfolio%20Build-7C3AED?style=for-the-badge)
-![Demo](https://img.shields.io/badge/Live%20Demo-Coming%20Soon-F59E0B?style=for-the-badge&logo=vercel)
+<p>
+  <a href="https://github.com/tahakubilay"><img src="https://img.shields.io/badge/Portfolio-Taha%20Kubilay-181717?style=for-the-badge&logo=github" alt="Portfolio" /></a>
+  <a href="https://github.com/tahakubilay/enterprise-crm-erp"><img src="https://img.shields.io/badge/Source-CRM%20%2F%20ERP-0A66C2?style=for-the-badge&logo=github" alt="Repository" /></a>
+  <img src="https://img.shields.io/badge/Status-Portfolio%20Build-7C3AED?style=for-the-badge" alt="Status" />
+  <img src="https://img.shields.io/badge/Demo-Coming%20Soon-F59E0B?style=for-the-badge" alt="Demo coming soon" />
+</p>
 
 <br/>
 
