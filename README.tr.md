@@ -2,77 +2,67 @@
 
 # Enterprise CRM & ERP Platformu
 
-### Müşteri operasyonları, iç iş akışları ve iş görünürlüğü için tek sistem
+### Müşteri operasyonları, iç iş akışları ve iş görünürlüğünü tek yapıda birleştiren platform
 
 <img src="./assets/hero.svg" alt="Animasyonlu proje başlığı" />
 
 <p><a href="./README.md">English</a> · <a href="./README.de.md">Deutsch</a> · <a href="./README.tr.md"><strong>Türkçe</strong></a></p>
 
 <p>
-<a href="https://github.com/tahakubilay"><img src="https://img.shields.io/badge/Portfolio-Taha%20Kubilay-181717?style=for-the-badge&logo=github" alt="Portfolio" /></a>
-<a href="https://github.com/tahakubilay/enterprise-crm-erp"><img src="https://img.shields.io/badge/Source-CRM%20%2F%20ERP-0A66C2?style=for-the-badge&logo=github" alt="Repository" /></a>
-<img src="https://img.shields.io/badge/Status-Portfolio%20Build-7C3AED?style=for-the-badge" alt="Durum" />
-<img src="https://img.shields.io/badge/Demo-Coming%20Soon-F59E0B?style=for-the-badge" alt="Demo yakında" />
+  <a href="https://github.com/tahakubilay"><img src="https://img.shields.io/badge/Taha%20Kubilay-GitHub-181717?style=for-the-badge&logo=github" alt="Taha Kubilay GitHub" /></a>
+  <a href="https://github.com/tahakubilay/enterprise-crm-erp"><img src="https://img.shields.io/badge/Repository-CRM%20%2F%20ERP-0A66C2?style=for-the-badge&logo=github" alt="Repository" /></a>
 </p>
 
 </div>
 
 ---
 
-## ✨ Kısaca
+## Genel Bakış
 
-| | |
-|---|---|
-| 🎯 **Hedef** | Müşteri tarafındaki operasyonları iç iş süreçleriyle bağlamak |
-| 🤝 **CRM** | Müşteri kayıtları, ilişki bağlamı ve operasyon geçmişi |
-| 🏢 **ERP** | İç iş akışları, operasyon kayıtları ve yönetim süreçleri |
-| 📊 **Görünürlük** | Merkezi raporlama ve alanlar arası operasyonel bağlam |
-| 🧠 **Mühendislik** | Domain ayrımı, ortak veri, yetkilendirme ve workflow tutarlılığı |
-| 🚀 **Demo** | Sentetik veri ortamı planlanıyor |
+Enterprise CRM & ERP Platformu, müşteri tarafındaki operasyonlarla iç iş süreçlerini ortak bir yönetim ortamında birleştirir.
 
-## 🔎 Genel Bakış
+Sistem; müşteri kayıtları, operasyonel workflow'lar, yönetim süreçleri ve raporlamanın farklı modüller arasında tutarlı kalabilmesi için ortak bir iş çekirdeği etrafında tasarlanmıştır.
 
-Bu proje birbirinden kopuk admin ekranları değil, **birleşik bir iş yönetim platformu** olarak tasarlandı.
+## Problem
 
-Temel mimari zorluk, CRM ve ERP domainlerinin bilgi paylaşmasını sağlarken uygulamayı sıkı bağlı ve bakımı zor bir yapıya dönüştürmemektir.
+Birbirinden kopuk iş sistemleri genellikle şunlara yol açar:
 
-## 🧩 Problem
-
-Birbirinden kopuk sistemler şunlara yol açar:
-
-- Tekrarlanan ve tutarsız kayıtlar
+- Tekrarlanan veya tutarsız kayıtlar
 - Parçalı workflow'lar
-- Manuel veri taşıma
+- Manuel veri aktarımı
 - Departmanlar arası düşük görünürlük
-- Bakımı zor raporlama
-- Artan operasyonel karmaşıklık
+- Karmaşık raporlama
+- Bağımsız süreçler arasında gereksiz sıkı bağlılık
 
-## 💡 Yaklaşım
+## Mimari
 
 ```mermaid
 flowchart LR
-    CUSTOMER[Müşteri Domaini] --> CORE[Ortak İş Çekirdeği]
-    OPERATIONS[ERP / Operasyonlar] --> CORE
-    CORE --> WORKFLOW[Workflow Engine / İş Kuralları]
+    CRM[Müşteri Domaini] --> CORE[Ortak İş Çekirdeği]
+    ERP[ERP / Operasyonlar] --> CORE
+    CORE --> RULES[İş Kuralları & Workflow'lar]
     CORE --> REPORTS[Raporlama & Yönetim Görünümleri]
-    WORKFLOW --> DATA[(İş Verisi)]
+    RULES --> DATA[(İş Verisi)]
     REPORTS --> DATA
 ```
 
-Platform, ilişkili bilgilerin müşteri ve iç iş süreçleri arasında tutarlı biçimde akabilmesi için ortak bir operasyon modeli etrafında yapılandırılmıştır.
+## Temel Yetenekler
 
-## ⚡ Yetenek Haritası
+| Alan | Amaç |
+|---|---|
+| **Müşteri Yönetimi** | Müşteri ve ilişki bağlamını yönetmek |
+| **Operasyonel Workflow'lar** | İç iş süreçlerini koordine etmek |
+| **Ortak Veri Modeli** | İlgili bilgileri modüller arasında tutarlı tutmak |
+| **Yetkilendirme** | Erişimi rol ve sorumluluğa göre ayırmak |
+| **Raporlama** | Domainler arası operasyonel görünürlük sağlamak |
+| **Yönetim Süreçleri** | İdari iş akışlarını merkezileştirmek |
 
-| CRM Tarafı | Ortak Platform | ERP Tarafı |
-|---|---|---|
-| 👤 Müşteri kayıtları | 🔐 Yetkilendirme sınırları | 🏢 İç operasyonlar |
-| 🧭 İlişki bağlamı | 🧱 Ortak veri modelleri | 🔄 İş workflow'ları |
-| 🕘 Operasyon geçmişi | 🧠 İş kuralları | 📋 Yönetim süreçleri |
-| 🔎 Müşteri görünürlüğü | 📊 Raporlama | 📈 Operasyonel görünürlük |
+## Mühendislik Odağı
 
-## 🧠 Mühendislik Odağı
+Bu proje, CRM ve ERP yeteneklerinin tek bir ürün gibi çalışması gerektiğinde ortaya çıkan mimari problemlere odaklanır.
 
-- Enterprise uygulama mimarisi
+Başlıca konular:
+
 - Domain ayrımı
 - Ortak veri modelleme
 - Modüller arası tutarlılık
@@ -82,37 +72,9 @@ Platform, ilişkili bilgilerin müşteri ve iç iş süreçleri arasında tutarl
 - Raporlama mimarisi
 - Uzun vadeli sürdürülebilirlik
 
-> [!IMPORTANT]
-> Public repo **portföye güvenli bir temsildir**. Production kimlik bilgileri, müşteri kayıtları, özel şirket verileri ve iç secret'lar yayınlanmayacaktır.
+## Veri & Gizlilik
 
-## 🎬 Canlı Demo
-
-**Yakında.**
-
-Demo, sistemin güvenli biçimde incelenebilmesi için sentetik iş kayıtları ve örnek workflow'lar kullanacaktır.
-
-## 🖼️ Ürün Vitrini
-
-| CRM Çalışma Alanı | Operasyonlar | Raporlama |
-|---|---|---|
-| 👥 Yakında | 🏢 Yakında | 📊 Yakında |
-
-## 🛣️ Proje Durumu
-
-- [x] Portföy reposu
-- [x] Case-study sunumu
-- [x] High-level mimari
-- [ ] Kaynak kod temizliği
-- [ ] Gerçek tech stack dokümantasyonu
-- [ ] Ekran görüntüleri & walkthrough GIF
-- [ ] Domain / veritabanı diyagramı
-- [ ] Public demo deployment
-
-## 💡 Bu Proje Neden Önemli?
-
-Bir CRM/ERP sistemi, birden fazla domain tek bir ürün gibi davranmak zorunda olduğunda karmaşıklaşır.
-
-Buradaki mühendislik değeri yalnızca CRUD işlevleri değildir; enterprise sistem genelinde **net sınırlar, tutarlı workflow'lar ve güvenilir ortak veri** tasarlamaktır.
+Public repository production kimlik bilgileri, müşteri kayıtları, özel şirket verileri veya iç secret'lar içermez.
 
 ---
 
@@ -120,6 +82,6 @@ Buradaki mühendislik değeri yalnızca CRUD işlevleri değildir; enterprise si
 
 ### Geliştiren: [Taha Kubilay](https://github.com/tahakubilay)
 
-`Enterprise Software` · `Full-Stack Engineering` · `CRM` · `ERP` · `Workflow Design`
+`Enterprise Software` · `CRM` · `ERP` · `Workflow Design` · `Full-Stack Engineering`
 
 </div>
