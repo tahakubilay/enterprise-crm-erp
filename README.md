@@ -4,7 +4,7 @@
 
 ### Unified customer operations, internal workflows and business visibility
 
-<img src="./assets/hero.svg" alt="Animated project header" />
+<img src="./assets/hero.svg" alt="CRM and ERP project visual identity" />
 
 <p><a href="./README.md"><strong>English</strong></a> · <a href="./README.de.md">Deutsch</a> · <a href="./README.tr.md">Türkçe</a></p>
 
