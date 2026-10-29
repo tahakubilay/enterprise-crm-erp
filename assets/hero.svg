@@ -1,18 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="72" viewBox="0 0 900 72" role="img">
-  <style>
-    .t{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-size:21px;font-weight:600;fill:#58a6ff;text-anchor:middle}
-    .cursor{fill:#8b949e}
-  </style>
-  <text class="t" x="450" y="43" opacity="1">CRM and ERP in one operational model
-    <animate attributeName="opacity" values="1;1;0;0;0;0" keyTimes="0;0.29;0.33;0.66;0.67;1" dur="9s" repeatCount="indefinite"/>
-  </text>
-  <text class="t" x="450" y="43" opacity="0">Customers, workflows and reporting
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.32;0.34;0.62;0.66;1" dur="9s" repeatCount="indefinite"/>
-  </text>
-  <text class="t" x="450" y="43" opacity="0">Enterprise software beyond basic CRUD
-    <animate attributeName="opacity" values="0;0;0;0;1;1" keyTimes="0;0.32;0.33;0.65;0.68;1" dur="9s" repeatCount="indefinite"/>
-  </text>
-  <rect class="cursor" x="790" y="25" width="3" height="24">
-    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
-  </rect>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="title desc">
+<title id="title">Enterprise CRM / ERP — project identity</title><desc id="desc">Customers, Workflows, Operational Intelligence</desc>
+<defs><linearGradient id="bg-layers" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0B101C"/><stop offset="1" stop-color="#111B2B"/></linearGradient><linearGradient id="glow-layers" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#90AFFE" stop-opacity=".82"/><stop offset="1" stop-color="#90AFFE" stop-opacity="0"/></linearGradient><pattern id="lines-layers" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#9CA9BD" stroke-opacity=".08"/></pattern></defs>
+<rect width="1200" height="260" rx="22" fill="url(#bg-layers)"/><rect width="1200" height="260" rx="22" fill="url(#lines-layers)"/><path d="M56 60H425" stroke="url(#glow-layers)" stroke-width="3"/><rect x="56" y="88" width="6" height="92" rx="3" fill="#90AFFE"/>
+<text x="90" y="139" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-weight="700" font-size="60" fill="#F6F8FC" letter-spacing="-1.5">Enterprise CRM / ERP</text>
+<text x="92" y="178" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="19" fill="#AFC0D5">Customers, Workflows, Operational Intelligence</text>
+<path d="M850 56C920 26 1065 30 1128 85C1180 130 1140 202 1035 224" fill="none" stroke="#90AFFE" stroke-opacity=".3" stroke-width="2"/>
+<circle cx="1005" cy="132" r="72" fill="#90AFFE" fill-opacity=".04" stroke="#90AFFE" stroke-opacity=".2" stroke-dasharray="4 11"/>
+<path d="M957 121l48-26 48 26-48 26-48-26zm0 15l48 26 48-26m-96 15l48 26 48-26" stroke="#90AFFE" stroke-width="2.3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="1148" cy="62" r="3" fill="#90AFFE" opacity=".8"/><circle cx="879" cy="209" r="3" fill="#90AFFE" opacity=".55"/>
 </svg>
