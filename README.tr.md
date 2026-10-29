@@ -4,7 +4,7 @@
 
 ### Müşteri operasyonları, iç iş akışları ve iş görünürlüğünü tek yapıda birleştiren platform
 
-<img src="./assets/hero.svg" alt="Animasyonlu proje başlığı" />
+<img src="./assets/hero.svg" alt="CRM ve ERP proje görsel kimliği" />
 
 <p><a href="./README.md">English</a> · <a href="./README.de.md">Deutsch</a> · <a href="./README.tr.md"><strong>Türkçe</strong></a></p>
 
